@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>La trivia</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+    <body onload="portada();">
+
+  <script type="text/javascript" src="app2.js">
+
+  </script>
+
+      <div id="portada">
+        <img src="duda2.jpeg" class="duda2" alt="">
+        <h1>¿Te atreves a probar tus conocimientos? <br>
+             o arriesgarte a ¡¡Volver al colegio!!
+        </h1>
+        <p>Ingresa tu Nombre: </p>
+        <form id="form1">
+              <input type="text" name="name" required ><br><em id="mensajeerror"></em>
+              <br>
+              </form>
+
+<button class="mi_button" type="button" onclick="comenzar()"name="button">Click para comenzar</button>
+      </div>
+
+  <div id="eleccion">
+    <div id="nombre"></div>
+    <h1>¿A qué curso quieres volver?</h1>
+    <button type="button" onclick="septimo()"name="button">Septimo</button>
+    <button type="button" onclick="ir_a_primero()"name="button">Primero medio</button><br>
+      <img src="duda1.png" alt="" class="duda1">
+  </div>
+
+  <div id="septimo">
+    <div class="cajapreguntas">
+        <form name="form_septimo" >
+    <!-- Pregunta 1   -->
+         <div class="titulopregunta">
+         Matemáticas: El 5% de 100 es:
+         </div>
+         <div class="claserespuestas">
+           <input type="radio" name="r1" value="r11">50<br> <!-- radio buton -->
+           <input type="radio" name="r1" value="r12">5<br>   <!-- name, nombre de la etiqueta -->
+           <input type="radio" name="r1" value="r13">15<br>    <!-- value: valor de la etiqueta -->
+         </div>
+    <!-- Pregunta 2   -->
+          <div class="titulopregunta">
+               Historia: Personaje principal de la revolución francesa:
+          </div>
+          <div class="claserespuestas">
+             <input type="radio" name="r2" value="r21"> Hitler<br>
+             <input type="radio" name="r2" value="r22"> Napoleón<br>
+             <input type="radio" name="r2" value="r23"> Arturo Prat<br>
+          </div>
+
+    <!-- Pregunta 3   -->
+          <div class="titulopregunta">
+            Lenguaje: Complete lo siguiente ¡__ mi cabeza!
+           </div>
+          <div class="claserespuestas">
+             <input type="radio" name="r3" value="r31">Hay<br>
+             <input type="radio" name="r3" value="r32">Ahí<br>
+             <input type="radio" name="r3" value="r33">Ay<br>
+          </div>
+
+             <p id="correctasseptimo">
+<!-- Boton para revisar -->
+          <div class="miboton">
+            <input type="button" onclick="f_revisar_septimo()" value="Revisar">
+          </div>
+       </form>
+     </div> <!-- cajapreguntas -->
+
+
+
+     <div class="foto_preguntas">
+       <div>  Tiempo para Responder <span id="time_septimo">30</span> segundos!</div>
+      <img src="septimo.jpeg" alt="" class="primero">
+    </div>
+
+<!-- Boton para volver a jugar -->
+    <button type="button" onclick="comenzar()"name="button">Volver a jugar</button>
+</div>
+
+  <div id="primero">
+    <div class="cajapreguntas">
+    <form class="" action="index.html" method="post" name= "form1">
+    <!-- Pregunta 1   -->
+    <div class="titulopregunta">
+      Biologia:¿Qué no es parte de una célula?
+    </div>
+    <!-- respuesta 1-->
+    <div class="claserespuestas">
+      <input type="radio" name="r1" value="r11">Núcleo.<br> <!--radio button -->
+      <input type="radio" name="r1" value="r12">Extracto.<br> <!--name, nombre de la etiqueta -->
+      <input type="radio" name="r1" value="r13">Ribosoma.<br><!-- value valor de la etiqueta -->
+    </div>
+      <!-- pregunta 2-->
+      <div class="titulopregunta">
+        Física : ¿Cuál es el valor de la gravedad de la Tierra?
+
+      </div>
+      <!-- respuesta2 -->
+      <div class="claserespuestas">
+        <input type="radio" name="r2" value="r21">9.8 m/s.<br>
+        <input type="radio" name="r2" value="r22">10 m/s.<br>
+        <input type="radio" name="r2" value="r23">9.8 m/s2.<br>
+      </div>
+      <div class="titulopregunta">
+         Química:  ¿Qué componente del átomo tiene carga negativa?
+      </div>
+      <div class="claserespuestas">
+        <input type="radio" name="r3" value="r31"> El electrón <br>
+        <input type="radio" name="r3" value="r32"> El protón<br>
+        <input type="radio" name="r3" value="r33"> El neutrón<br>
+      </div>
+
+       <p id="correctasprimero">
+      <!-- boton revisar-->
+      <div class="miboton">
+        <input type="button" onclick="f_revisar();" name="" value="Revisar">
+      </div>
+      </form>
+    </div> <!-- cajapreguntas -->
+
+    <div class="foto_preguntas">
+      <div>  Tiempo para Responder <span id="time_primero">30</span> segundos!</div>
+     <img src="primero.jpeg" alt="" class="primero">
+    </div>
+      <!-- boton volver a jugar-->
+        <button type="button" onclick="comenzar();"name="button">volver a jugar</button>
+  </div>
+    </body>
+</html>
